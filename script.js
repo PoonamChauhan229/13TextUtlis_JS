@@ -48,3 +48,13 @@ clearText.addEventListener('click',()=>{
     toRead.innerHTML=""
     counter.innerHTML=""
 })
+
+// dark mode and light mode enable
+var navbarToggle=document.getElementById('navbarToggle')
+function changeTheme(){
+console.log("Theme Changed")
+
+document.body.classList.toggle('bg-dark')
+navbarToggle.classList.toggle('navbar-dark')
+navbarToggle.classList.toggle('bg-dark')
+}
